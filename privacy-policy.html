@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ouncely Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0 auto; padding: 32px 20px 80px; max-width: 720px;
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color: #23202b; background: #fbf9fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #ece8ef; background: #16141a; }
+    code { background: #262230; }
+    th, td { border-color: #332e3d; }
+  }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 34px 0 8px; }
+  h3 { font-size: 16px; margin: 20px 0 6px; color: #4a4356; }
+  @media (prefers-color-scheme: dark) { h3 { color: #c9c2d4; } }
+  .updated { color: #6f6878; font-size: 14px; margin-bottom: 28px; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: 15px; }
+  th, td { border: 1px solid #ddd7e0; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: #efeaf1; padding: 1px 5px; border-radius: 4px; font-size: 14px; }
+  ul { padding-left: 22px; }
+  li { margin: 5px 0; }
+  .note { border-left: 3px solid #a8607d; padding: 10px 14px; margin: 18px 0; }
+</style>
+</head>
+<body>
+
+<h1>Ouncely Privacy Policy</h1>
+<p class="updated">Last updated: 22 September 2026</p>
+
+<p>
+  Ouncely is a pumping and milk stash tracker for Android. This policy explains
+  exactly what the app does and does not do with information. It is written to
+  be read, not to be skimmed past.
+</p>
+
+<div class="note">
+  <strong>The short version.</strong> Your pumping sessions, your stash and your
+  baby details stay on your phone. There is no account and no Ouncely server,
+  and we never see your logs.
+
+  <ul style="margin-top:12px">
+    <li>
+      <strong>Partner sharing OFF (the default):</strong> none of your
+      pumping, stash or baby information leaves your phone. Not to us, not to
+      anyone.
+    </li>
+    <li>
+      <strong>Partner sharing ON:</strong> a small daily summary (today's
+      total and your stash) is sent so that <strong>only the person you give
+      your code to</strong> can see it in their copy of Ouncely. Your
+      pump-by-pump history is never sent. Turning sharing off deletes the
+      summary.
+    </li>
+  </ul>
+  <p style="margin-top:12px">
+    Separately, <strong>the free version shows ads</strong>. The Google ad
+    system collects device information (such as an advertising ID) to show
+    them &mdash; never your pumping data. You are asked for consent first, and
+    Premium turns ads off completely.
+  </p>
+</div>
+
+<h2>Who is responsible</h2>
+<p>
+  Ouncely is made by an independent developer. For any question about this
+  policy or your data, write to
+  <a href="mailto:ouncely.app@gmail.com">ouncely.app@gmail.com</a>.
+</p>
+
+<h2>What the app stores on your phone</h2>
+<p>
+  All of the following is written to a database inside the app on your device.
+  It is not uploaded anywhere.
+</p>
+<ul>
+  <li>Pump sessions: start and end time, duration, left and right amounts, which side, where the milk went, and any note you add</li>
+  <li>Stash bags: amount, date stored, location, expiry date, status and any label</li>
+  <li>Baby details you choose to enter: a name and how much your baby drinks per day</li>
+  <li>Your settings: units, reminder interval, quiet hours, theme</li>
+</ul>
+<p>
+  When you uninstall Ouncely, this data is removed with it. You can also delete
+  everything at any time from <em>Settings &rarr; Your data &rarr; Delete all data</em>.
+  That button also turns partner sharing off and deletes the shared summary.
+</p>
+
+<h2>Sharing with your partner</h2>
+
+<div class="note">
+  <strong>This is off when you install the app.</strong> Until you switch it
+  on yourself, nothing about your pumping ever leaves your phone.
+</div>
+
+<p>
+  Partner sharing lets one other person &mdash; your partner, your mother, a
+  friend &mdash; see how your day is going without you having to text them.
+  You turn it on in Settings, the app gives you a six-character code, and you
+  give that code to them. They type it into their own copy of Ouncely.
+</p>
+
+<h3>How it actually travels</h3>
+<p>
+  We want to be exact about this, because &ldquo;shared with your
+  partner&rdquo; can sound like the two phones talk to each other directly.
+  They do not.
+</p>
+<p>
+  When sharing is on, the summary is uploaded to <strong>Google Firebase
+  (Cloud Firestore)</strong>, and your partner's app reads it from there using
+  the code. So the information passes through Google's servers on its way to
+  them. Google acts as our hosting provider for this feature and does not use
+  the content for its own purposes. No Ouncely staff reads it, and it is not
+  sold, shared with advertisers, or used for any other purpose.
+</p>
+<p>
+  To make this work, both your app and your partner's app sign in to Firebase
+  anonymously. That sign-in has no email, no password and no name &mdash; it is
+  a random identifier that simply lets the upload happen. As with any internet
+  connection, Google's servers see your phone's IP address while the summary is
+  being sent or read.
+</p>
+
+<h3>What is shared</h3>
+<p>Only a short summary, refreshed as you log pumps:</p>
+<ul>
+  <li>The baby's name, if you have set one</li>
+  <li>Today's total and how many pumps today</li>
+  <li>Your daily goal (how much your baby drinks per day)</li>
+  <li>When your last pump ended</li>
+  <li>When the summary was last updated</li>
+  <li>Your stash total, the number of bags, and how many expire soon</li>
+</ul>
+
+<h3>What is never shared</h3>
+<ul>
+  <li>Your pump-by-pump history &mdash; individual sessions never leave the phone</li>
+  <li>Left and right amounts for any single pump</li>
+  <li>Your notes</li>
+  <li>Anything from days other than today, apart from the stash totals above</li>
+</ul>
+
+<h3>Your control</h3>
+<ul>
+  <li>
+    <strong>Off by default.</strong> Sharing does nothing until you switch it
+    on.
+  </li>
+  <li>
+    <strong>Turning it off deletes it.</strong> When you turn sharing off, the
+    app deletes the stored summary from Firebase. The old code stops working
+    immediately.
+  </li>
+  <li>
+    <strong>You can change the code any time.</strong> &ldquo;Get a new
+    code&rdquo; deletes the old one and makes a fresh one, so anyone who had
+    the old code loses access at once.
+  </li>
+  <li>
+    <strong>Only the code opens it.</strong> The summary can be opened only by
+    someone who types in your exact code. There is no way in the app &mdash; or
+    for anyone else &mdash; to list or search other families' summaries.
+  </li>
+  <li>
+    <strong>They can only look.</strong> Whoever has the code can see the
+    summary. They cannot change, add or delete anything in your app.
+  </li>
+  <li>
+    <strong>It locks itself after 30 days.</strong> A summary that has not
+    been updated for 30 days can no longer be opened by anyone &mdash; not your
+    partner, not anyone else. So if you uninstall Ouncely without turning
+    sharing off, your summary stops being visible on its own. If you would like
+    it removed completely, email us your code and we will delete it.
+  </li>
+  <li>
+    <strong>Delete all data turns it off too.</strong> Deleting your data in
+    Settings also deletes the shared summary.
+  </li>
+</ul>
+<p>
+  Treat the code like a key: anyone you give it to can see that summary until
+  you turn sharing off or make a new code.
+</p>
+
+<h2>Backups</h2>
+<p>
+  Ouncely can export your data to a JSON file that you choose the location for.
+  That file belongs to you. If you save it to a cloud drive or email it to
+  yourself, it is then handled by that service under their terms, not ours.
+  Ouncely does not perform any automatic cloud backup.
+</p>
+<p>
+  Android's own system backup may include the app's data if you have that
+  feature enabled on your device. That is a Google service and is covered by
+  Google's privacy policy.
+</p>
+
+<h2>Advertising, in the free version</h2>
+<p>
+  The free version of Ouncely shows banner ads through Google AdMob. To serve
+  those ads, the Google Mobile Ads SDK collects information from your device.
+</p>
+<table>
+  <tr><th>What</th><th>Why</th><th>Who</th></tr>
+  <tr>
+    <td>Advertising ID and device identifiers</td>
+    <td>To show ads and limit how often the same ad repeats</td>
+    <td>Google AdMob</td>
+  </tr>
+  <tr>
+    <td>Approximate device and app information</td>
+    <td>To decide which ad formats fit your screen</td>
+    <td>Google AdMob</td>
+  </tr>
+  <tr>
+    <td>IP address</td>
+    <td>To estimate your general region (country or state), for example to apply local privacy laws</td>
+    <td>Google AdMob</td>
+  </tr>
+  <tr>
+    <td>Ad interactions and diagnostics</td>
+    <td>To count ad views and taps, prevent fraud and fix ad problems</td>
+    <td>Google AdMob</td>
+  </tr>
+</table>
+<p>
+  Before any ad is requested, Ouncely shows Google's consent form. Your choice
+  there decides whether ads are personalised, and in some regions whether ads
+  are shown at all. Where the law gives you this choice (for example in the
+  EU, the UK and some US states), you can change it at any time in
+  <em>Settings &rarr; Your data &rarr; Ad privacy choices</em>.
+</p>
+<p>
+  Your pumping data, stash data and baby details are never shared with the
+  advertising SDK or anyone else.
+</p>
+<p>
+  Google's handling of this information is described in the
+  <a href="https://policies.google.com/technologies/partner-sites">Google
+  privacy and terms</a> pages.
+</p>
+
+<h2>If you buy Premium</h2>
+<p>
+  Purchases go through Google Play Billing. Google handles the payment, and
+  Ouncely only receives confirmation of whether a purchase is active. We never
+  see your card details, your name or your billing address.
+</p>
+<p>
+  <strong>Premium removes ads completely.</strong> On a Premium device the
+  advertising SDK is not started at all.
+</p>
+
+<h2>When you contact us</h2>
+<p>
+  <em>Send feedback</em> opens your own email app with a draft addressed to us.
+  The draft includes the app version, your Android version and your phone model
+  to help us fix problems &mdash; you can see and delete these before sending.
+  Nothing is sent unless you press send.
+</p>
+<p>
+  If the app ever crashes, a short technical crash report is saved
+  <strong>on your phone only</strong>. It is sent to us only if you choose to
+  share it from Settings, and you can delete it there instead.
+</p>
+
+<h2>Analytics</h2>
+<p>
+  Ouncely contains no analytics SDK. There is no event tracking, no crash
+  reporting library and no user profiling inside the app. Aggregate install and
+  crash statistics that Google Play shows every developer are produced by Google
+  Play itself, not by code in this app.
+</p>
+
+<h2>Notifications</h2>
+<p>
+  Reminders and expiry alerts are generated on your device by your own settings.
+  Nothing is sent through a server. If you decline the notification permission,
+  the rest of the app keeps working.
+</p>
+
+<h2>Children</h2>
+<p>
+  Ouncely is designed for parents and caregivers, not for children. It is not
+  directed to children under 13 and we do not knowingly collect information from
+  them. Information you enter about your baby stays on your phone in the same
+  way as everything else.
+</p>
+
+<h2>Your choices</h2>
+<p>
+  <strong>Partner sharing:</strong> Settings &rarr; Share with your partner
+  &rarr; <em>Turn sharing off</em>. This deletes the uploaded summary
+  straight away.
+</p>
+<ul>
+  <li>Export your data at any time from Settings</li>
+  <li>Delete all data at any time from Settings (this also turns partner sharing off)</li>
+  <li>Uninstall the app to remove everything it stored</li>
+  <li>Change your advertising consent in Settings &rarr; Your data &rarr; Ad privacy choices (where the law gives this choice)</li>
+  <li>Reset your advertising identifier in your Android system settings</li>
+</ul>
+
+<h2>Health information</h2>
+<p>
+  Ouncely is a tracking and organisation tool. It is not medical advice and it
+  is not a medical device. Milk storage times shown in the app follow published
+  guidance from the U.S. Centers for Disease Control and Prevention. Please
+  speak to your healthcare provider or a lactation consultant about anything
+  concerning your milk or your supply.
+</p>
+
+<h2>Changes to this policy</h2>
+<p>
+  If this policy changes, the date at the top is updated and the new version is
+  published at this address before the change takes effect in the app.
+</p>
+
+<h2>Contact</h2>
+<p>
+  <a href="mailto:ouncely.app@gmail.com">ouncely.app@gmail.com</a>
+</p>
+
+</body>
+</html>
