@@ -33,7 +33,7 @@
 <body>
 
 <h1>Ouncely Privacy Policy</h1>
-<p class="updated">Last updated: 23 September 2026</p>
+<p class="updated">Last updated: 24 September 2026</p>
 
 <p>
   Ouncely is a pumping and milk stash tracker for Android. This policy explains
@@ -158,7 +158,10 @@
   in <em>Settings &rarr; Share with your partner &rarr; Who is watching</em>,
   with a button to allow them, to refuse, or to stop someone you allowed
   earlier. A name sent with a request is kept even if you never allow it, so
-  that you can see it; refusing deletes it.
+  that you can see it. If you refuse or stop someone, their entry is kept but
+  marked as refused and hidden from your list: it gives them no access, and it
+  is what stops the same app from asking you again more than once a day.
+  These entries are deleted when you turn sharing off or make a new code.
 </p>
 <p>
   If you are the one following someone else's code: your name and phone model
@@ -198,6 +201,12 @@
     locked until you tap <em>Allow</em> on your phone.
   </li>
   <li>
+    <strong>Requests are limited.</strong> Once you refuse someone, their app
+    can ask again only a full day after its last request. The server enforces
+    this, not just the app. If a name keeps coming back, make a new code: the
+    old one stops working for everyone.
+  </li>
+  <li>
     <strong>You can stop them whenever you want.</strong> In <em>Who is
     watching</em>, &ldquo;Stop sharing with them&rdquo; cuts their access at
     once, and the summary they had is wiped from their phone the next time
@@ -221,6 +230,12 @@
   <li>
     <strong>Delete all data turns it off too.</strong> Deleting your data in
     Settings also deletes the shared summary.
+  </li>
+  <li>
+    <strong>Sharing is part of Premium.</strong> If your Premium ends, the app
+    stops sending new summaries. The last one stays where it was and locks
+    itself after 30 days, as described above, or you can turn sharing off to
+    delete it straight away.
   </li>
 </ul>
 <p>
@@ -324,6 +339,13 @@
   Reminders and expiry alerts are generated on your device by your own settings.
   Nothing is sent through a server. If you decline the notification permission,
   the rest of the app keeps working.
+</p>
+<p>
+  The one exception is partner sharing. While it is on, your phone checks
+  Firebase every few hours, and when you open the app, for new requests to
+  follow your code, and shows you a notification if there is one. This check
+  only reads the requests for your own code. Nothing is pushed to your phone
+  from outside, and the check stops as soon as you turn sharing off.
 </p>
 
 <h2>Children</h2>
